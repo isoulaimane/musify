@@ -1,0 +1,24 @@
+# topase core 20171121
+musify:
+  image: musify
+  container_name: musify-back
+  ports:
+    - "9000:8083"
+ui-musify:
+  image: ui-musify
+  container_name: ui-musify
+  ports:
+    - "9001:5080"
+postgres:
+  image: postgres
+  container_name: postgres
+  ports:
+   - "5432:5432"
+  environment:
+       - POSTGRES_PASSWORD=test
+#jenkins:
+#  image: jenkins
+#  container_name: jenkins
+#  ports:
+#   - "9002:8080"
+#   - "50000:50000"
