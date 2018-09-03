@@ -10,7 +10,7 @@ public class Example {
 
     @GetMapping("/test")
     public String test() {
-        return "6";
+        return "7";
     }
 
 }
