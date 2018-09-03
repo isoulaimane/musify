@@ -7,3 +7,5 @@ docker pull postgres
  -- command line to start postgres container --
 docker run --name postgres -p 5432:5432 -e POSTGRES_PASSWORD=test -d postgres
 
+-- command to run jenkins --
+docker run -p 9005:8080 -p 50000:50000 jenkins
